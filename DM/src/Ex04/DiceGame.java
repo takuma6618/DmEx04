@@ -1,0 +1,26 @@
+package Ex04;
+
+import java.util.Random;
+
+public class DiceGame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int total = 0;
+
+		System.out.println("Rolling the dice...");
+		
+		for(int i = 0;i < 2;i++) {
+			Random random = new Random();
+			int ran = random.nextInt(6);
+			System.out.println(1+ran);
+			total += 1+ran;
+			
+		}
+		
+		System.out.println("Total value: " + total);
+			
+	}
+
+}
